@@ -7,3 +7,5 @@ To use this tool you must have Node, as well as cyber chef, installed:
 
   sudo apt install nodejs  
   sudo npm install --save cyberchef
+
+To run, simply download the file, replace the keylist with your own, replace the strings you know should match and run.
