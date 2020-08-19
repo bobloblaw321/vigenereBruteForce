@@ -11,7 +11,7 @@ var done = false;
 
 // Reads each line of the key file as a stream to enable large files for brute forcing (i.e. rockyou)
 readInterface.on('line', function(line) {
-	if (String(chef.vigenèreDecode('BZQ', [line])) == 'MII') {
+	if (String(chef.vigenèreDecode('cipherString', [line])) == 'stringToMatch') { //Edit the part of the cipher string that will match up with the known decoded cipher
         	console.log('The key is: ' + line)
         	throw new Error("Key found :)");
 	}
